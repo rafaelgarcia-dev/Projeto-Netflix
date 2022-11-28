@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Netflix</title>
+</head>
+
+<body> 
+    <div id="conteiner">
+        <div id="cabecalho">
+            <img id="logo-netflix" src="./img/netflix.svg" alt="logo-netflix">
+            <button id="botao-entrar">Entrar</button>
+        </div>
+
+        <div id="textos">
+            <h1>Filmes, séries e muito mais. Sem limites.</h1>
+            <p id="paragrafo1">Assista onde quiser. Cancele quando quiser.</p>
+            <p id="paragrafo2">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+
+            <div id="formulario">
+                <input type="text" placeholder="Email">
+                <button id="botao1">Vamos lá <img id="image-botao1" src="./img/seta.svg" alt="botão-entrar"></button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="rodape">
+        <h2>Perguntas frequentes</h2>
+        <button id="button-pergunta">O que é a Netflix? <img id="image-pergunta" src="./img/fechar.svg" alt=""></button>
+        <div id="pergunta">
+            <p class="paragrafo-pergunta">A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários
+                premiados em milhares de aparelhos conectados à internet.</p>
+                <br>
+            <p class="paragrafo-pergunta2">Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal
+                acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+            </p>
+        </div>
+
+    </div>
+
+
+
+</body> 
+
+<script>
+    let botao = document.getElementById('button-pergunta')
+    let menu = document.getElementById('pergunta')
+    let image = document.getElementById('image-pergunta')
+
+    function aparecer(){
+        if (menu.style.display=='none'){
+            menu.style.display='block'
+            image.id='image-pergunta-girar'
+        } else{
+            menu.style.display='none'
+            image.id='image-pergunta'
+        }
+
+    }
+    
+    botao.addEventListener('click', aparecer)
+</script>
+
+</html>
+
