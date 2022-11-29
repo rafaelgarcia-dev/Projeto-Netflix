@@ -155,4 +155,30 @@ h2{
     
 }
 
+@media screen and (max-width:900px){
+    #conteiner{
+        width: 100vw;
+    }
+    #rodape{
+        width: 100%;
+        height: 35em;
+        position: absolute;
+    }
+    h1{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        font-size: 40px;
+    }
+    #button-pergunta{
+        width: 100vw;
+    }
+    #pergunta{
+        width: 100vw;
+    }
+    h2{
+        font-size: 2em;
+    }
+}
+
 
